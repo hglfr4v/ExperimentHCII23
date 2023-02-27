@@ -22,20 +22,25 @@ public class AudioControllerScene4Woman : MonoBehaviour
             animator.SetBool("isSpeaking1", true);
             questions[0].Play();
         }
-        if(Input.GetButtonDown("2Key")){
-            animator.SetInteger("SpeakingCounter", 2);
+        if(Input.GetButtonDown("3Key")){
+            animator.SetInteger("SpeakingCounter", 3);
             animator.SetBool("isSpeaking2", true);
             questions[1].Play();
         }
-        if(Input.GetButtonDown("3Key")){
-            animator.SetInteger("SpeakingCounter", 3);
+        if(Input.GetButtonDown("5Key")){
+            animator.SetInteger("SpeakingCounter", 5);
             animator.SetBool("isSpeaking3", true);
             questions[2].Play();
         }
-        if(Input.GetButtonDown("4Key")){
-            animator.SetInteger("SpeakingCounter", 4);
+        if(Input.GetButtonDown("6Key")){
+            animator.SetInteger("SpeakingCounter", 6);
             animator.SetBool("isSpeaking4", true);
             questions[3].Play();
+        }
+        if(Input.GetButtonDown("8Key")){
+            animator.SetInteger("SpeakingCounter", 8);
+            animator.SetBool("isSpeaking5", true);
+            questions[4].Play();
         }
         if (questions[0].isPlaying)
         {
@@ -60,6 +65,12 @@ public class AudioControllerScene4Woman : MonoBehaviour
             animator.SetBool("isSpeaking4", true);
         } else {
             animator.SetBool("isSpeaking4", false);
+        }
+        if (questions[4].isPlaying)
+        {
+            animator.SetBool("isSpeaking5", true);
+        } else {
+            animator.SetBool("isSpeaking5", false);
         }
     }
 }

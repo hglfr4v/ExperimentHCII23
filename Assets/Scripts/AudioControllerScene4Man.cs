@@ -17,13 +17,13 @@ public class AudioControllerScene4Man : MonoBehaviour
     void Update()
     {
 
-       if(Input.GetButtonDown("5Key")){
-            animator.SetInteger("SpeakingCounterMan", 5);
+       if(Input.GetButtonDown("2Key")){
+            animator.SetInteger("SpeakingCounterMan", 2);
             animator.SetBool("isSpeakingMan1", true);
             questions[0].Play();
         }
-        if(Input.GetButtonDown("6Key")){
-            animator.SetInteger("SpeakingCounterMan", 6);
+        if(Input.GetButtonDown("4Key")){
+            animator.SetInteger("SpeakingCounterMan", 4);
             animator.SetBool("isSpeakingMan2", true);
             questions[1].Play();
         }
@@ -31,11 +31,6 @@ public class AudioControllerScene4Man : MonoBehaviour
             animator.SetInteger("SpeakingCounterMan", 7);
             animator.SetBool("isSpeakingMan3", true);
             questions[2].Play();
-        }
-        if(Input.GetButtonDown("8Key")){
-            animator.SetInteger("SpeakingCounterMan", 8);
-            animator.SetBool("isSpeakingMan4", true);
-            questions[3].Play();
         }
         if (questions[0].isPlaying)
         {
@@ -54,12 +49,6 @@ public class AudioControllerScene4Man : MonoBehaviour
             animator.SetBool("isSpeakingMan3", true);
         } else {
             animator.SetBool("isSpeakingMan3", false);
-        }
-        if (questions[3].isPlaying)
-        {
-            animator.SetBool("isSpeakingMan4", true);
-        } else {
-            animator.SetBool("isSpeakingMan4", false);
         }
     }
 }

@@ -18,48 +18,59 @@ public class AudioControllerScene2 : MonoBehaviour
     {
 
        if(Input.GetButtonDown("1Key")){
-            animator.SetInteger("SpeakingCounter", 1);
-            animator.SetBool("isSpeaking1", true);
+            animator.SetInteger("SpeakingCounterMan", 1);
+            animator.SetBool("isSpeakingMan1", true);
             questions[0].Play();
         }
         if(Input.GetButtonDown("2Key")){
             animator.SetInteger("SpeakingCounter", 2);
-            animator.SetBool("isSpeaking2", true);
+            animator.SetBool("isSpeakingMan2", true);
             questions[1].Play();
         }
         if(Input.GetButtonDown("3Key")){
-            animator.SetInteger("SpeakingCounter", 3);
-            animator.SetBool("isSpeaking3", true);
+            animator.SetInteger("SpeakingCounterMan", 3);
+            animator.SetBool("isSpeakingMan3", true);
             questions[2].Play();
         }
         if(Input.GetButtonDown("4Key")){
-            animator.SetInteger("SpeakingCounter", 4);
-            animator.SetBool("isSpeaking4", true);
+            animator.SetInteger("SpeakingCounterMan", 4);
+            animator.SetBool("isSpeakingMan4", true);
             questions[3].Play();
+        }
+        if(Input.GetButtonDown("5Key")){
+            animator.SetInteger("SpeakingCounterMan", 5);
+            animator.SetBool("isSpeakingMan5", true);
+            questions[4].Play();
         }
         if (questions[0].isPlaying)
         {
-            animator.SetBool("isSpeaking1", true);
+            animator.SetBool("isSpeakingMan1", true);
         } else {
-            animator.SetBool("isSpeaking1", false);
+            animator.SetBool("isSpeakingMan1", false);
         }
         if (questions[1].isPlaying)
         {
-            animator.SetBool("isSpeaking2", true);
+            animator.SetBool("isSpeakingMan2", true);
         } else {
-            animator.SetBool("isSpeaking2", false);
+            animator.SetBool("isSpeakingMan2", false);
         }
         if (questions[2].isPlaying)
         {
-            animator.SetBool("isSpeaking3", true);
+            animator.SetBool("isSpeakingMan3", true);
         } else {
-            animator.SetBool("isSpeaking3", false);
+            animator.SetBool("isSpeakingMan3", false);
         }
         if (questions[3].isPlaying)
         {
-            animator.SetBool("isSpeaking4", true);
+            animator.SetBool("isSpeakingMan4", true);
         } else {
-            animator.SetBool("isSpeaking4", false);
+            animator.SetBool("isSpeakingMan4", false);
+        }
+        if (questions[4].isPlaying)
+        {
+            animator.SetBool("isSpeakingMan5", true);
+        } else {
+            animator.SetBool("isSpeakingMan5", false);
         }
     }
 }

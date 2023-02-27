@@ -22,5 +22,14 @@ public class AudioControllerScene1 : MonoBehaviour
         if(Input.GetButtonDown("4Key")){
             questions[3].Play();
         }
+        if(Input.GetButtonDown("5Key")){
+            questions[4].Play();
+        }
+        if(Input.GetButtonDown("6Key")){
+            questions[5].Play();
+        }
+        if(Input.GetButtonDown("7Key")){
+            questions[6].Play();
+        }
     }
 }
