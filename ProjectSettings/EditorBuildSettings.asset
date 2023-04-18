@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Condition1_multipleCameras.unity
+    guid: 67f659158311f48d3a5269abf5974150
+  - enabled: 0
+    path: Assets/Scenes/Condition3_multipleCameras.unity
+    guid: c8481c6dc6877422ba96a62469efb28a
+  - enabled: 0
+    path: Assets/Scenes/Condition4_multipleCameras.unity
+    guid: 526e73124e7764d0490dcc73b0b4a019
+  - enabled: 1
+    path: Assets/Scenes/Condition2_multipleCameras.unity
+    guid: 034d2ee278a0941f1a64373042246f1e
   m_configObjects: {}
